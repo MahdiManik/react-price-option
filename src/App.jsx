@@ -1,4 +1,4 @@
-
+import Navbar from './assets/components/Navber/Navber'
 import './App.css'
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
 
   return (
     <>
+     <Navbar></Navbar>
      
       <h1 className='text-5xl font-bold bg-orange-600 py-6 text-center text-white'>Vite + React</h1>
       
