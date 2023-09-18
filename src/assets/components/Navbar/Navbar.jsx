@@ -15,25 +15,27 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className='py-4 text-white bg-lime-700'>
-      <div className='md:hidden text-2xl ' onClick={() => setOpen(!open)}>
-        {
-          open === true ?
-            <AiOutlineClose></AiOutlineClose>
-            :
-            <AiOutlineMenuUnfold></AiOutlineMenuUnfold>
-        }
+    <nav className='py-4 text-white bg-lime-800'>
+      <div className='container mx-auto'>
+        <div className='md:hidden text-2xl ' onClick={() => setOpen(!open)}>
+          {
+            open === true ?
+              <AiOutlineClose></AiOutlineClose>
+              :
+              <AiOutlineMenuUnfold></AiOutlineMenuUnfold>
+          }
 
 
 
-      </div>
-      <ul className={`md:flex duration-700 
-      ${open ? "top-12 bg-orange-700 p-12 ml-4 rounded-lg" : "-top-40"}
+        </div>
+        <ul className={`md:flex duration-500 py-4
+      ${open ? "top-12 bg-orange-800 ml-4 p-12 rounded-lg" : "-top-40"}
       absolute md:static pl-8`}>
-        {
-          routes.map(route => <li className='mr-12 hover:bg-orange-500 hover:px-4 rounded-lg' key={route.id}><a href={route.path}>{route.name}</a></li>)
-        }
-      </ul>
+          {
+            routes.map(route => <li className='mr-12 hover:bg-orange-700 hover:px-6 hover:py-1 rounded-lg' key={route.id}><a href={route.path}>{route.name}</a></li>)
+          }
+        </ul>
+      </div>
     </nav>
   )
 }
