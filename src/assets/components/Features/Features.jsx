@@ -10,7 +10,7 @@ const Features = ({feature}) => {
 };
 
 Features.propTypes = {
-    feature: PropTypes.object
+    feature: PropTypes.string.isRequired
 };
 
 export default Features;

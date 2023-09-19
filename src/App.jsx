@@ -1,6 +1,7 @@
 import Navbar from './assets/components/Navbar/Navbar'
 import './App.css'
 import PriceOptions from './assets/components/PriceOptions/PriceOptions'
+import LineChart  from './assets/components/LineChart/LineChart'
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
       <h1 className='text-5xl font-bold bg-orange-600 py-6 text-center text-white'>Vite + React</h1>
 
       <PriceOptions></PriceOptions>
+
+      <LineChart></LineChart>
 
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
